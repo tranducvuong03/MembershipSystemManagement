@@ -6,4 +6,20 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="IServices\" />
+    <Folder Include="Models\Response\" />
+    <Folder Include="Models\Request\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="15.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MembershipSystemManagement.Common\MembershipSystemManagement.Common.csproj" />
+    <ProjectReference Include="..\MembershipSystemManagement.Repository\MembershipSystemManagement.Repository.csproj" />
+  </ItemGroup>
+
 </Project>
