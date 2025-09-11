@@ -10,11 +10,13 @@ namespace MembershipSystemManagement.Repository
         }
 
         public DbSet<User> Users { get; set; }
+        public DbSet<LocalAuthentication> LocalAuthentication { get; set; }
+        public DbSet<SocialAuthentication> SocialAuthentication { get; set; }
         public DbSet<Role> Roles { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
