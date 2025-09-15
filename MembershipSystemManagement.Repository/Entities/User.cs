@@ -13,8 +13,10 @@ namespace MembershipSystemManagement.Repository.Entities
         public DateOnly DateOfBirth { get; set; }
         public bool IsActive { get; set; }
 
+        public virtual Role Role { get; set; }
         public virtual LocalAuthentication LocalAuthentication { get; set; }
         public virtual ICollection<SocialAuthentication> SocialAuthentications { get; set; }
-        public virtual Role Role { get; set; }
+        public virtual ICollection<EventRegistration> EventRegistrations { get; set; }
+        public virtual ICollection<SupportTicket> SupportTickets { get; set; }
     }
 }
